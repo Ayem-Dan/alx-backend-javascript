@@ -1,16 +1,16 @@
-function getCurrentYear() {
-    const date = new Date();
-    return date.getFullYear();
-  }
-  
-export default function getBudgetForCurrentYear(income, gdp, capita) {
-    const budget = {
-  
-    [`income-${getCurrentYear()}`] : income,
-    [`gdp-${getCurrentYear()}`] : gdp,
-    [`capita-${getCurrentYear()}`] : capita,
-    };
-    return budget;
-  }
+function getCurrentYear () {
+  const date = new Date()
+  return date.getFullYear()
+}
 
-  console.log(getBudgetForCurrentYear(2100, 5200, 1090));
+export default function getBudgetForCurrentYear (income, gdp, capita) {
+  const budget = {
+
+    [`income-${getCurrentYear()}`]: income,
+    [`gdp-${getCurrentYear()}`]: gdp,
+    [`capita-${getCurrentYear()}`]: capita
+  }
+  return budget
+}
+
+console.log(getBudgetForCurrentYear(2100, 5200, 1090))
