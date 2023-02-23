@@ -5,7 +5,7 @@ export default function iterateThroughObject(reportWithIterator) {
     if (reportWithIterator.length - 1 === i) {
       itemstr += item;
     } else {
-      itemstr += `${item  } | `;
+      itemstr += `${item} |`;
     }
     i += i;
   }
