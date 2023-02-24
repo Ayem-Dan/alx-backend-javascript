@@ -1,6 +1,6 @@
 import {
   uploadPhoto, createUser 
-} from './utils.js';
+} from './utils';
 
 export async function asyncUploadUser() {
   try {
